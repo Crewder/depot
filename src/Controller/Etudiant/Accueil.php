@@ -15,7 +15,7 @@ class Accueil extends AbstractController
     /**
      * @Route("/", name="Accueil")
      */
-    public function accueil()
+    public function accueil56()
     {
         return $this->render('Accueil/accueil.html.twig');
     }

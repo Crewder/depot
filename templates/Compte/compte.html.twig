@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+{% block title %}Mon compte{% endblock %}
+
+{% block body %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="profil">Mon compte</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="inscription">Déposer un travail<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout">Déconnexion</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Bienvenue sur ton profil {{user.prenom}}</h1>
+    </div>
+{% endblock %}
